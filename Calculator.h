@@ -6,10 +6,11 @@
 class Calculator {
 public:
     Calculator();
-    float evaluate(const std::string& expression);
+    float evaluate(const std::string& expr);
 
 private:
     float applyOps(float lhs, char op, float rhs);
+    int precedence(char op);
 };
 
 #endif

@@ -10,9 +10,9 @@ int main() {
 
     try {
         float result = calc.evaluate(expr);
-        std::cout << "Result: " << result << std::endl;
+        std::cout << "Result: " << result << '\n';
     } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << '\n';
     }
 
     return 0;
